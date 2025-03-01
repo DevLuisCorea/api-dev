@@ -4,7 +4,7 @@ Testing and Development API´s
 
 ## API Calcular Salario Neto Nicaragua
 ##### development by Luis Corea
-##### date  2025-02-
+##### date  2025-02
 
 Esta API fue desarrollada con el fin de hacer cálculos para que el cliente vea si es capaz sanamente de costear un crédito y calcular salario neto.
 
@@ -13,8 +13,8 @@ Esta API fue desarrollada con el fin de hacer cálculos para que el cliente vea 
 - Método GET
 
 #### Endpoint
-- http://localhost:3000/api/calcularsalario?salario=18000&moneda=NIO  (GET)
-
+- http://localhost:3000/api/calcularsalario?salario=18000&moneda=NIO  (GET) DEV
+- http://localhost:3000/api/calcularsalario?salario=18000&moneda=NIO  (GET) PROD
 ## Technologies ⚙️
 
 API uses to work properly:
