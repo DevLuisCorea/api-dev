@@ -14,7 +14,7 @@ Esta API fue desarrollada con el fin de hacer cálculos para que el cliente vea 
 
 #### Endpoint
 - http://localhost:3000/api/calcularsalario?salario=18000&moneda=NIO  (GET) DEV
-- http://localhost:3000/api/calcularsalario?salario=18000&moneda=NIO  (GET) PROD
+- https://api-dev-beryl.vercel.app/api/calcularsalario?salario=18000&moneda=NIO  (GET) PROD
 ## Technologies ⚙️
 
 API uses to work properly:

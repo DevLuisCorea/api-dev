@@ -48,6 +48,7 @@ app.get('/api/calcularsalario', (req, res) => {
     let salarioBruto = parseFloat(req.query.salario);
     let moneda = req.query.moneda;
     const tasaCambio = 36.6243;
+    const developer = "Esta API Fue Desarollada por Ing. Luis Corea"
     // Validamos que el salario sea un número válido
     if (isNaN(salarioBruto) || salarioBruto <= 0) {
         return res.status(400).json({ error: "Debe proporcionar un salario válido en la query, ejemplo: ?salario=18000&moneda=USD" });
@@ -62,8 +63,9 @@ app.get('/api/calcularsalario', (req, res) => {
     }
     let resultado = calcularSalarioNeto(salarioBruto);
     // Agregamos la moneda al resultado
-    resultado.tasaCambio = tasaCambio;
     resultado.moneda = moneda;
+    resultado.tasaCambio = tasaCambio;
+    resultado.developer = developer;
     res.json(resultado);
 });
 
